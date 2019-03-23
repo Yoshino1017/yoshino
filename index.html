@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>中国铁路</title>
+	<style type="text/css">
+	    .headp{
+                width: auto;
+                height:auto;
+                max-height: 100%;
+                max-width: 100%;
+            }
+		.head{
+			width:100%;
+			height:110px;
+			background-color:#0068b7;
+		text-align: center;
+		} //标题
+		.myzr{
+			width:100%;
+			height:100%;
+			text-align: center;
+		}
+		.myzrp{
+                width: auto;
+                height:auto;
+                max-height: 100%;
+                max-width: 100%;
+            }//萌芽之日
+        .zgsd{
+			width:100%;
+			height:100%;
+			text-align: center;
+		}
+      	.demo{
+		padding: 2em 0;
+	}
+	.box{
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+	}
+	.box:after{
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,63,91,0.6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: all 0.5s ease 0s;
+	}
+	.box:hover:after{
+		opacity: 1;
+	}
+	.box img{
+		width: 100%;
+		height: auto;
+	}
+	.box .box-content{
+		width: 100%;
+		background: #255773;
+		padding: 10px 0;
+		color: #d5f7ff;
+		position: absolute;
+		bottom: -100%;
+		left: 0;
+		z-index: 1;
+		transition: all 0.5s ease 0s;
+	}
+	.box:hover .box-content{
+		bottom: 0;
+	}
+	.box .title{
+		font-size: 22px;
+		font-weight: 700;
+		margin: 0 0 8px 0;
+		text-transform: uppercase;
+	}
+	.box .post{
+		display: block;
+		font-size: 15px;
+		text-transform: capitalize;
+	}
+	.box .social{
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.box .social li{
+		display: inline-block;
+		margin-right: 7px;
+		position: relative;
+		transform: translateY(-100px);
+		transition: all 0.5s ease 0s;
+	}
+	.box:hover .social li:first-child{
+		transition-delay: 0.5s;
+	}
+	.box:hover .social li:last-child{
+		transition-delay: 0.8s;
+	}
+	.box .social li:before{
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 50px;
+		background: #f1e7c3;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.box:hover .social li{
+		transform: translateY(0);
+	}
+	.box .social li a{
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #f1e7c3;
+		font-size: 20px;
+		font-weight: 700;
+		color: #003f5b;
+		margin-top: 50px;
+		opacity: 1;
+		transition: all 0.3s ease 0s;
+	}
+	.box:hover .social li a{
+		opacity: 1;
+	}
+	.box .social li a:hover{
+		background: #ff9420;
+		color: #fff;
+	}
+	@media only screen and (max-width:990px){
+		.box{ margin-bottom: 30px; }
+	}
+		.demo1{
+		padding: 2em 0;
+	}
+	.box1{
+		text-align: center;
+		overflow: hidden;
+		color: #fff;
+		position: relative;
+	}
+	.box1:after{
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 69%, rgba(0, 0, 0, 0.76) 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.5s ease 0s;
+	}
+	.box1:hover:after{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.09) 11%, rgba(0, 0, 0, 0.12) 13%, rgba(0, 0, 0, 0.19) 20%, rgba(0, 0, 0, 0.29) 28%, rgba(0, 0, 0, 0.29) 29%, rgba(0, 0, 0, 0.42) 38%, rgba(0, 0, 0, 0.46) 43%, rgba(0, 0, 0, 0.53) 47%, rgba(0, 0, 0, 0.75) 69%, rgba(0, 0, 0, 0.87) 84%, rgba(0, 0, 0, 0.98) 99%, rgba(0, 0, 0, 0.94) 100%);
+	}
+	.box1 img{
+		width: 100%;
+		height: auto;
+	}
+	.box1 .box-content1{
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 20px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.box1 .title1{
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0 0 10px 0;
+		transform: translateY(145px);
+		transition: all 0.4s cubic-bezier(0.13, 0.62, 0.81, 0.91) 0s;
+	}
+	.box1 .post1{
+		display: block;
+		padding: 8px 0;
+		font-size: 15px;
+		transform: translateY(145px);
+		transition: all 0.4s cubic-bezier(0.13, 0.62, 0.81, 0.91) 0s;
+	}
+	.box1:hover .title1,
+	.box1:hover .post1{
+		transform: translateY(0);
+	}
+	.box1 .social1{
+		list-style: none;
+		padding: 0 0 5px 0;
+		margin: 40px 0 25px;
+		opacity: 0;
+		position: relative;
+		transform: perspective(500px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+		transition: all 0.6s cubic-bezier(0, 0, 0.58, 1) 0s;
+	}
+	.box1:hover .social1{
+		opacity: 1;
+		transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	.box1 .social1:before{
+		content: "";
+		width: 50px;
+		height: 2px;
+		background: #fff;
+		margin: 0 auto;
+		position: absolute;
+		top: -23px;
+		left: 0;
+		right: 0;
+	}
+	.box1 .social1 p{
+		display: inline-block;
+	}
+	.box1 .social1 p a{
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #6d3795;
+		font-size: 20px;
+		color: #fff;
+		margin-right: 10px;
+		transition: all 0.3s ease 0s;
+	}
+	.box1 .social1 p a:hover{
+		background: #bea041;
+	}
+	.box1 .social1 p:last-child a{
+		margin-right: 0;
+	}
+	</style>
+	<link rel="stylesheet" href="jq/DB_tab29.css" type="text/css"></link>
+    <script type="text/javascript" src="jq/js.min.js"></script> 
+    <script type="text/javascript" src="jq/jquery.DB_rotateRollingBanner.min.js"></script>
+    <link href="jq/bootstrap.min.css" rel="stylesheet">
+<link href="jq/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+</head>
+<body style="text-align: center ; background: #494A5F;">
+<div class="head">
+	<img class="headp" src="img/中国铁路.jpg" />
+</div>
+<div class="myzr">
+<img class="myzrp" src="img/萌芽之日.jpg" />
+</div> 	
+
+<div id="d_tab29" style="max-width: 1366px ;margin: 0 auto">
+		<ul class="d_img">			
+			 
+			<li class="d_pos1"><a href="myzr/dxtl.htm"><img  src="img/xwm.jpg" alt="" cursor:pointer/></a></li>
+			<li class="d_pos2"><a href="myzr/wstl.htm"><img src="img/wstl.jpg" alt="" cursor:pointer/></a></li>
+			<li class="d_pos3"><a href="myzr/txtl.htm"><img src="img/txtl.jpg" alt="" cursor:pointer/></a></li>
+			<li class="d_pos4"><a href="myzr/xytl.htm"><img src="img/xytl.jpg" alt="" cursor:pointer/></a></li>
+			<li class="d_pos5"><a href="myzr/jztl.htm"><img src="img/jztl.jpeg" alt="" cursor:pointer/></a></li>
+			<li style="cursor:pointer"><a href="myzr/twtl.htm"><img src="img/twtl.jpg"alt=""></a></li>
+		</ul>	
+		<ul class="d_menu">
+			 
+		</ul>
+		<p class="d_prev"><img src="img/prev.png" alt=""></p>
+		<p class="d_next"><img src="img/next.png" alt=""></p>
+</div>
+<script>
+
+	$('#d_tab29').DB_rotateRollingBanner({
+		key:"c37080",            
+		moveSpeed:200,           
+		autoRollingTime:5000      
+	})
+</script>
+</div>
+<div class="zgsd">
+<img class="zgsdp" src="img/中国速度.jpg" />
+</div> 	
+<div class="demo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="box">
+							<img src="img/1.jpg">
+							<div class="box-content">
+								<h3 class="title">中国速度-1</h3>
+								<span class="post">十年提速</span>
+							</div>
+							<ul class="social">
+								<li><a href="zgsd/qsc.htm"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+						<div class="box">
+							<img src="img/2.jpg">
+							<div class="box-content">
+								<h3 class="title">中国速度-2</h3>
+								<span class="post">高铁速度</span>
+							</div>
+							<ul class="social">
+								<li><a href="zgsd/gtsd.htm"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+						<div class="box">
+							<img src="img/3.jpg">
+							<div class="box-content">
+								<h3 class="title">中国速度-3</h3>
+								<span class="post">复兴未来</span>
+							</div>
+							<ul class="social">
+								<li><a href="zgsd/fxwl.htm"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<div class="zgsd">
+<img class="zgsdp" src="img/智汇铁路.jpg" />
+<div>
+	<div class="demo1">
+			<div class="container">
+				<div class="row1">
+					<div class="col-md-4 col-sm-6">
+						<div class="box1">
+							<img src="img/4.jpg">
+							<div class="box-content1">
+								<h3 class="title1">智汇铁路-1</h3>
+								<span class="post1">支付未来</span>
+								<ul class="social1">
+									<p><a href="zhtl/zhtl.html"><i class="fa fa-link"></i></a></p>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+						<div class="box1">
+							<img src="img/5.jpg">
+							<div class="box-content1">
+	                            <h3 class="title1">上海建桥学院SHD队</h3>
+								<span class="post1"></span>
+								<ul class="social1">
+								<h4 class="title1">制作：周思阳</h3>
+								<h4 class="title1">信息收集：倪健</h3>
+								<h4 class="title1">优化：周炜杰</h3>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+						<div class="box1">
+							<img src="img/6.jpg">
+							<div class="box-content1">
+								<h3 class="title1">智汇铁路-2</h3>
+								<span class="post1">调度未来</span>
+								<ul class="social1">
+									<p><a href="zhtl/ddwl.html"><i class="fa fa-link"></i></a></p>
+								</ul>
+							</div>
+						</div>
+					</div>
+</div>	
+</body>
+</html>
